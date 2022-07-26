@@ -58,7 +58,7 @@
                                     href="../goit-markup-hw-04/images/svg/tel.svg#icon-tel"
                                 ></use>
                             </svg>
-                            >+38 096 111 11 11</a
+                            +38 096 111 11 11</a
                         >
                     </li>
                 </ul>
@@ -72,7 +72,7 @@
                     <h1 class="hero-title">
                         Эффективные решения для вашего бизнеса
                     </h1>
-                    <button type="button" class="hero-button">
+                    <button type="button" class="hero-button" data-modal-open>
                         Заказать услугу
                     </button>
                 </div>
@@ -148,25 +148,38 @@
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="item-section">
                         <li class="image">
-                            <img
-                                src="./images/imgkodin.jpg"
-                                alt="кодинг"
-                                width="370"
-                            />
+                            <div class="img-text">
+                                <img
+                                    src="./images/imgkodin.jpg"
+                                    alt="кодинг"
+                                    width="370"
+                                />
+
+                                <h6 class="img-title">декстопні додатки</h6>
+                            </div>
                         </li>
+
                         <li class="image">
-                            <img
-                                src="./images/imgadaptetion.jpg"
-                                alt="адаптация"
-                                width="370"
-                            />
+                            <div class="img-text">
+                                <img
+                                    src="./images/imgadaptetion.jpg"
+                                    alt="адаптация"
+                                    width="370"
+                                />
+                                <h6 class="img-title">мобільні додатки</h6>
+                            </div>
                         </li>
+
                         <li class="image">
-                            <img
-                                src="./images/imgdizaer.jpg"
-                                alt="Дизайн"
-                                width="370"
-                            />
+                            <div class="img-text">
+                                <img
+                                    src="./images/imgdizaer.jpg"
+                                    alt="Дизайн"
+                                    width="370"
+                                />
+
+                                <h6 class="img-title">дезайнерські рішення</h6>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -615,5 +628,17 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>
+                    <svg class="backdrop-icon" width="11" height="11">
+                        <use
+                            href="../goit-markup-hw-04/images/svg/close.svg#icon-Vector-1"
+                        ></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
